@@ -7,4 +7,5 @@
 - `!` for breaking changes.
 - Subject: imperative, ≤50 chars, no period. Example: `feat(auth): add OAuth login`.
 - Body: explain **what/why** (not how); wrap at 72 chars; use bullets if clearer.
-- Signature: add if co-authored by AI.
+- Co-authorship: add trailer if AI-assisted.
+- Signing: required.
