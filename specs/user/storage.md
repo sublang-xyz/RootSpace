@@ -8,7 +8,7 @@ This document is **user-facing**. It describes storage conventions visible to MC
 
 ## Format
 
-- [STG-001] The system shall store all content as Markdown files.
+- [STG-001] The system shall store text content as Markdown files and binary content as raw files.
 - [STG-002] The file identifier shall be its full normalized path from the user's root filesystem (e.g., `/notes/privacy-policies-across-ai-agents.md`). (Ref: [MCP-025])
 - [STG-003] Filenames should be slugs derived from titles to support recall and legibility.
 

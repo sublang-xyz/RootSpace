@@ -44,7 +44,7 @@ This document is **user-facing** for MCP clients/agents integrating with OwnSpac
 
 ## Hash Validation
 
-- [MCP-031] `hash` shall be the SHA-256 hex digest of the file content.
+- [MCP-031] `hash` shall be the SHA-256 hex digest of the stored bytes: UTF-8 encoded for text, decoded for base64. No newline normalization.
 - [MCP-032] Every mutation shall require `hash` from a prior read.
 - [MCP-033] Every mutation shall return the new `hash`.
 - [MCP-034] Hash mismatch shall indicate stale state and trigger re-read.
@@ -57,8 +57,9 @@ This document is **user-facing** for MCP clients/agents integrating with OwnSpac
 
 ## Text Matching
 
-- [MCP-045] `old` in `text.replace` shall be plain text that must exactly match within the `lines` range.
-- [MCP-046] `anchor` in `text.insert` shall be plain text that must exactly match on the specified `line`; content is inserted before the anchor.
+- [MCP-045] `old` in `text.replace` shall be plain text that must exactly match once within the `lines` range.
+- [MCP-046] `anchor` in `text.insert` shall be plain text that must exactly match once on the specified `line`; content is inserted before the anchor.
+- [MCP-047] The system shall return an error if `old` or `anchor` matches zero or more than one occurrence.
 
 ## Error Handling
 
