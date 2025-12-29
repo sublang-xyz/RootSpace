@@ -1,5 +1,9 @@
 # Rules
 
+## Audience
+
+This document is **internal** (repository contribution rules).
+
 ## Commit Message Format
 
 - Use `<type>(<optional scope>)<optional !>: <subject>` format.
