@@ -19,7 +19,7 @@ This document is **user-facing** for MCP clients/agents integrating with OwnSpac
 ## Tools
 
 | ID | Tool | Parameters | Returns |
-|----|------|------------|---------|
+| ---- | ------ | ------------ | --------- |
 | [MCP-010] | `file.create` | `path`, `content`, `encoding` | `hash` |
 | [MCP-011] | `file.remove` | `path`, `hash` | — |
 | [MCP-012] | `text.read` | `path`, `lines`? | `content`, `hash`, `total_lines` |
@@ -57,9 +57,8 @@ This document is **user-facing** for MCP clients/agents integrating with OwnSpac
 
 ## Text Matching
 
-- [MCP-045] `old` in `text.replace` shall be plain text that must exactly match once within the `lines` range.
-- [MCP-046] `anchor` in `text.insert` shall be plain text that must exactly match once on the specified `line`; content is inserted before the anchor.
-- [MCP-047] The system shall return an error if `old` or `anchor` matches zero or more than one occurrence.
+- [MCP-045] `old` in `text.replace` shall be the full content of one or more consecutive lines within the `lines` range.
+- [MCP-046] `anchor` in `text.insert` shall be the full content of a line; `content` is inserted as new lines before it.
 
 ## Error Handling
 
