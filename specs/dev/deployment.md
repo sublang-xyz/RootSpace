@@ -6,18 +6,18 @@ This document is **internal** (implementation and operations). MCP consumers sho
 
 ## Local Mode
 
-- [DEP-001] The system shall run as a persistent HTTP daemon on port 9999.
-- [DEP-002] The system shall store data in `~/.ownspace/` by default.
-- [DEP-003] The system shall auto-start as a login item (launchd/systemd/Windows Service).
-- [DEP-004] The system shall treat the data directory as the root filesystem for all MCP `path` parameters.
+- [DEP-001] While in local mode, the system shall run as a persistent HTTP daemon on port 9999.
+- [DEP-002] While in local mode, the system shall store data in `~/.ownspace/` by default.
+- [DEP-003] While in local mode, the system shall auto-start as a login item (launchd/systemd/Windows Service).
+- [DEP-004] While in local mode, the system shall treat the data directory as the root filesystem for all MCP `path` parameters.
 
 ## SaaS Mode
 
-- [DEP-010] The system shall run as an HTTP/SSE server. (Ref: [MCP-002])
-- [DEP-011] The system shall use external IdP for OAuth authentication. (Ref: [AUTH-010])
-- [DEP-012] The system shall isolate tenant data by filtering queries with user ID from token.
-- [DEP-013] The system shall use tenant-agnostic endpoints (no tenant ID in URL).
-- [DEP-014] The system shall expose a per-user root filesystem (cloud-backed) for all MCP `path` parameters.
+- [DEP-010] While in SaaS mode, the system shall run as an HTTP/SSE server. (Ref: [MCP-002])
+- [DEP-011] While in SaaS mode, the system shall use external IdP for OAuth authentication. (Ref: [AUTH-010])
+- [DEP-012] While in SaaS mode, the system shall isolate tenant data by filtering queries with user ID from token.
+- [DEP-013] While in SaaS mode, the system shall use tenant-agnostic endpoints (no tenant ID in URL).
+- [DEP-014] While in SaaS mode, the system shall expose a per-user root filesystem (cloud-backed) for all MCP `path` parameters.
 
 ## Shared Behavior
 
