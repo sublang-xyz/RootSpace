@@ -11,8 +11,7 @@ This document is **internal** (implementation and operations). MCP consumers sho
 - [DEP-001] The system shall run as a persistent HTTP daemon on port 9999.
 - [DEP-002] The system shall store data in `~/.ownspace/` by default.
 - [DEP-003] The system shall auto-start as a login item (launchd/systemd/Windows Service).
-- [DEP-004] Where a desktop app requires stdio transport, a bridge process shall translate stdio to HTTP.
-- [DEP-005] The system shall treat the data directory as the root filesystem for all MCP `path` parameters.
+- [DEP-004] The system shall treat the data directory as the root filesystem for all MCP `path` parameters.
 
 ## SaaS Mode
 

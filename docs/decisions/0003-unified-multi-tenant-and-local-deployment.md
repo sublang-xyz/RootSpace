@@ -18,17 +18,7 @@ Adopt a **remote-first** architecture: single HTTP/SSE server, identical across 
 
 ### Transport
 
-HTTP/SSE only — no native stdio in core. For local desktop apps:
-
-```text
-Desktop App (Claude, Cursor, ...)
-      ↓ stdio
-  [ Bridge ]  ← thin stdio-to-HTTP translator, spawned by app
-      ↓ HTTP
-  [ Daemon ]  ← persistent local server, owns data file
-```
-
-Daemon auto-starts as a login item (launchd/systemd/Windows Service).
+HTTP/SSE only. Major MCP clients now support HTTP natively. Local daemon auto-starts as a login item (launchd/systemd/Windows Service).
 
 ### Authentication
 

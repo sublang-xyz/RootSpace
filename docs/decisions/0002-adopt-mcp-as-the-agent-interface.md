@@ -12,16 +12,11 @@ OwnSpace needs a standardized interface for AI agents to access the user's knowl
 
 ## Decision
 
-Adopt MCP (Model Context Protocol) as the agent interface. OwnSpace acts as an MCP server exposing Resources, Tools, and Prompts.
+Adopt MCP (Model Context Protocol) as the agent interface. OwnSpace acts as an MCP server exposing Resources and Tools.
 
 ### Deployment
 
-One implementation, two transports:
-
-| Transport       |  Use Case           | Privacy              |
-|-----------------|---------------------|----------------------|
-| stdio           | Local-only          | Maximum (no network) |
-| Streamable HTTP | Remote/multi-device | Requires OAuth       |
+Streamable HTTP transport for both local and remote. Major MCP clients (Claude Desktop, Cursor) now support HTTP natively; stdio-only clients can use third-party bridges like `mcp-remote`.
 
 ### Authentication
 
