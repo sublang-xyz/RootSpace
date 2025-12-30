@@ -7,7 +7,7 @@ This document is **internal** (implementation and operations). MCP consumers sho
 ## Local Mode
 
 - [DEP-001] While in local mode, the system shall run as a persistent HTTP daemon on port 9999.
-- [DEP-002] While in local mode, the system shall store data in `~/.ownspace/` by default.
+- [DEP-002] While in local mode, the system shall store data in `~/.rootspace/` by default.
 - [DEP-003] While in local mode, the system shall auto-start as a login item (launchd/systemd/Windows Service).
 - [DEP-004] While in local mode, the system shall treat the data directory as the root filesystem for all MCP `path` parameters.
 

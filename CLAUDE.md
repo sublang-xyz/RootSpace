@@ -1,4 +1,4 @@
-# OwnSpace
+# RootSpace
 
 User-owned knowledge space — one source, your control, zero fragmentation.
 

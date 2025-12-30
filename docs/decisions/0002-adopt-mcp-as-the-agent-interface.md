@@ -8,11 +8,11 @@ Accepted
 
 ## Context
 
-OwnSpace needs a standardized interface for AI agents to access the user's knowledge space — without building custom integrations for each client.
+RootSpace needs a standardized interface for AI agents to access the user's knowledge space — without building custom integrations for each client.
 
 ## Decision
 
-Adopt MCP (Model Context Protocol) as the agent interface. OwnSpace acts as an MCP server exposing Resources and Tools.
+Adopt MCP (Model Context Protocol) as the agent interface. RootSpace acts as an MCP server exposing Resources and Tools.
 
 ### Deployment
 
@@ -22,8 +22,8 @@ Streamable HTTP transport for both local and remote. Major MCP clients (Claude D
 
 Two distinct flows:
 
-- **User login** — OwnSpace as OAuth *client*: supports Google, GitHub, other social logins via OIDC
-- **Agent access** — OwnSpace as OAuth *provider*: OAuth 2.1 with PKCE, Dynamic Client Registration, Metadata Discovery
+- **User login** — RootSpace as OAuth *client*: supports Google, GitHub, other social logins via OIDC
+- **Agent access** — RootSpace as OAuth *provider*: OAuth 2.1 with PKCE, Dynamic Client Registration, Metadata Discovery
 
 User identity is decoupled from agent authorization.
 

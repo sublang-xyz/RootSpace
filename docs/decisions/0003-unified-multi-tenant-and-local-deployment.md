@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-- OwnSpace must run as both multi-tenant SaaS and single-tenant local server.
+- RootSpace must run as both multi-tenant SaaS and single-tenant local server.
 - Users grant different scopes to different AI agents.
 - We need maximum code reuse while supporting fine-grained authorization.
 

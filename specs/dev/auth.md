@@ -7,7 +7,7 @@ This document is **internal** (implementation and configuration). User-facing au
 ## Token Issuers
 
 - [AUTH-010] While in SaaS mode, the system shall authenticate users via the configured external IdP for login and token management. (Ref: [DEP-011])
-- [AUTH-011] While in SaaS mode, the system shall accept agent access tokens issued by OwnSpace and signed by an OwnSpace-managed signing key.
+- [AUTH-011] While in SaaS mode, the system shall accept agent access tokens issued by RootSpace and signed by an RootSpace-managed signing key.
 - [AUTH-012] While in local mode, the system shall accept agent access tokens minted by CLI and signed with the local signing secret.
 
 ## JWT Validation

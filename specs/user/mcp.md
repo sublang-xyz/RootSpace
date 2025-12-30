@@ -2,7 +2,7 @@
 
 Ref: [ADR-0002](/docs/decisions/0002-adopt-mcp-as-the-agent-interface.md), [ADR-0005](/docs/decisions/0005-mcp-text-file-content-interface.md)
 
-This document is **user-facing** for MCP clients/agents integrating with OwnSpace. All `MCP-*` items define externally observable behavior. Authorization is specified in `specs/user/auth.md`.
+This document is **user-facing** for MCP clients/agents integrating with RootSpace. All `MCP-*` items define externally observable behavior. Authorization is specified in `specs/user/auth.md`.
 
 ## Protocol
 
