@@ -2,8 +2,6 @@
 
 Ref: [ADR-0003](/docs/decisions/0003-unified-multi-tenant-and-local-deployment.md)
 
-## Audience
-
 This document is **user-facing** for MCP consumers and the consent UI. All `AUTH-*` items here define externally observable authorization behavior.
 
 ## Token Format
@@ -22,15 +20,14 @@ Path-based authorization:
 
 ## Scope Matching
 
-- [AUTH-034] Scope matching shall use filesystem-style glob matching on canonical, normalized paths. (Ref: [MCP-026])
-- [AUTH-035] A scope ending in `/*` matches the directory itself and its direct children (one segment). Example: `/work/*` matches `/work`, `/work/a.md`, and `/work/subdir`, but not `/work/subdir/b.md`.
-- [AUTH-036] `**` matches zero or more path segments (recursive). Example: `/work/**` matches `/work/a.md` and `/work/subdir/b.md`.
-- [AUTH-037] A scope without wildcards matches exactly one path.
+- [AUTH-034] Scope matching shall use path prefix matching on canonical, normalized paths. (Ref: [MCP-026])
+- [AUTH-035] A scope ending in `/*` matches the directory and its direct children (one level). Example: `/work/*` matches `/work/a.md` but not `/work/sub/b.md`.
+- [AUTH-036] A scope ending in `/` matches the directory and all descendants (recursive). Example: `/work/` matches `/work/a.md` and `/work/sub/b.md`.
+- [AUTH-037] A scope path without trailing `/` or `/*` that refers to a directory shall be treated as ending in `/` (recursive).
 - [AUTH-038] Scope and path comparisons shall be case-sensitive.
-- [AUTH-039] A scope ending in `/` shall be treated as if it ended in `/**` (e.g., `/work/` is equivalent to `/work/**`).
-- [AUTH-050] A matching `write:` scope shall implicitly grant `read:` access to the same path set.
+- [AUTH-039] A matching `write:` scope shall implicitly grant `read:` access to the same path set.
 
-## Authorization
+## Access Control
 
 - [AUTH-030] The system shall deny access by default if no matching scope is present.
 - [AUTH-031] `file.create`, `text.replace`, `text.insert`, `text.append`, `file.remove` require a matching `write:` scope. (Ref: [MCP-010], [MCP-011], [MCP-013]–[MCP-015])

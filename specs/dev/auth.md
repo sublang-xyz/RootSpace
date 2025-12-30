@@ -2,8 +2,6 @@
 
 Ref: [ADR-0003](/docs/decisions/0003-unified-multi-tenant-and-local-deployment.md)
 
-## Audience
-
 This document is **internal** (implementation and configuration). User-facing auth and scope semantics are specified in `specs/user/auth.md`.
 
 ## Token Issuers
@@ -14,11 +12,11 @@ This document is **internal** (implementation and configuration). User-facing au
 
 ## JWT Validation
 
-- [AUTH-020] The system shall extract user ID from the `sub` claim and scopes from the `scope` claim (space-delimited).
-- [AUTH-021] The system shall reject tokens with missing or expired `exp` claim.
-- [AUTH-022] The system shall reject the `none` algorithm.
-- [AUTH-023] While in SaaS mode, the system shall accept only `RS256` and `ES256` algorithms and discover signing keys via JWKS endpoint.
-- [AUTH-024] While in local mode, the system shall use `HS256` with the local signing secret.
+- [AUTH-015] The system shall extract user ID from the `sub` claim and scopes from the `scope` claim (space-delimited).
+- [AUTH-016] The system shall reject tokens with missing or expired `exp` claim.
+- [AUTH-017] The system shall reject the `none` algorithm.
+- [AUTH-018] While in SaaS mode, the system shall accept only `RS256` and `ES256` algorithms and discover signing keys via JWKS endpoint.
+- [AUTH-019] While in local mode, the system shall use `HS256` with the local signing secret.
 
 ## Path Handling
 

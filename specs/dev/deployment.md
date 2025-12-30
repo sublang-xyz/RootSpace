@@ -2,8 +2,6 @@
 
 Ref: [ADR-0003](/docs/decisions/0003-unified-multi-tenant-and-local-deployment.md), [ADR-0004](/docs/decisions/0004-typescript-with-node-js.md)
 
-## Audience
-
 This document is **internal** (implementation and operations). MCP consumers should not need to rely on `DEP-*` details beyond what is surfaced via the MCP interface and auth scopes.
 
 ## Local Mode

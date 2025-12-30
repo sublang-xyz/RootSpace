@@ -2,8 +2,6 @@
 
 Ref: [ADR-0005](/docs/decisions/0005-mcp-text-file-content-interface.md)
 
-## Audience
-
 This document is **user-facing**. It describes storage conventions visible to MCP clients and end users (file paths, naming, and organization).
 
 ## Format

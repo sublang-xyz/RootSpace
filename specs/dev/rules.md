@@ -1,7 +1,5 @@
 # Rules
 
-## Audience
-
 This document is **internal** (repository contribution rules).
 
 ## Commit Message Format
