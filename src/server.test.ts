@@ -6,6 +6,7 @@ import { join } from 'node:path';
 import { tmpdir, homedir } from 'node:os';
 import { spawn, ChildProcess } from 'node:child_process';
 import { createServer as createNetServer } from 'node:net';
+import { request, IncomingMessage } from 'node:http';
 
 const TEST_PORT = 19999;
 
@@ -82,17 +83,16 @@ function makeRequest(
   method = 'GET'
 ): Promise<{ status: number; body: unknown }> {
   return new Promise((resolve, reject) => {
-    const http = require('node:http');
-    const req = http.request(
+    const req = request(
       { hostname: 'localhost', port, path, method, headers: { Connection: 'close' } },
-      (res: any) => {
+      (res: IncomingMessage) => {
         let data = '';
         res.on('data', (chunk: string) => (data += chunk));
         res.on('end', () => {
           try {
-            resolve({ status: res.statusCode, body: JSON.parse(data) });
+            resolve({ status: res.statusCode ?? 0, body: JSON.parse(data) });
           } catch {
-            resolve({ status: res.statusCode, body: data });
+            resolve({ status: res.statusCode ?? 0, body: data });
           }
         });
       }
