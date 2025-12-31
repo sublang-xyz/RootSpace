@@ -257,7 +257,14 @@ describe('T1.2 Health Check', () => {
 });
 
 describe('T1.3 Graceful Shutdown', () => {
-  it('T1.3.1: Server shuts down gracefully on SIGTERM', async () => {
+  // Skip signal tests on Windows - SIGTERM/SIGINT are Unix signals
+  const isWindows = process.platform === 'win32';
+
+  it('T1.3.1: Server shuts down gracefully on SIGTERM', async (ctx) => {
+    if (isWindows) {
+      ctx.skip();
+      return;
+    }
     const testDir = join(tmpdir(), 'rootspace-sigterm-' + Date.now());
     const { child } = await spawnServer(TEST_PORT + 1, testDir);
 
@@ -289,7 +296,11 @@ describe('T1.3 Graceful Shutdown', () => {
     }
   });
 
-  it('T1.3.2: Server shuts down gracefully on SIGINT', async () => {
+  it('T1.3.2: Server shuts down gracefully on SIGINT', async (ctx) => {
+    if (isWindows) {
+      ctx.skip();
+      return;
+    }
     const testDir = join(tmpdir(), 'rootspace-sigint-' + Date.now());
     const { child } = await spawnServer(TEST_PORT + 2, testDir);
 
