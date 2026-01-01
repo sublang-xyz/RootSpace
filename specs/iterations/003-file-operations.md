@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Iteration 3: Storage & File Operations
 
 Ref: [ADR-0005](/docs/decisions/0005-mcp-text-file-content-interface.md), [MCP-010], [MCP-011], [MCP-012]

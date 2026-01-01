@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Rules
 
 This document is **internal** (repository contribution rules).

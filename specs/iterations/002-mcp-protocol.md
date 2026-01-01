@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Iteration 2: MCP Protocol Foundation
 
 Ref: [ADR-0002](/docs/decisions/0002-adopt-mcp-as-the-agent-interface.md), [MCP-001], [MCP-002], [MCP-005]

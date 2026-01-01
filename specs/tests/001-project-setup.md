@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Tests: Iteration 1 — Project Setup & HTTP Server
 
 ## T1.1 HTTP Server Startup

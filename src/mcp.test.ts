@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { createHttpServer, ServerInstance } from './server.js';
 import { Config, VERSION } from './config.js';

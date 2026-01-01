@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+
 import { createServer, IncomingMessage, ServerResponse, Server } from 'node:http';
 import { mkdir } from 'node:fs/promises';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';

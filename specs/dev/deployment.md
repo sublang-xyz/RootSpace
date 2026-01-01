@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Deployment
 
 Ref: [ADR-0003](/docs/decisions/0003-unified-multi-tenant-and-local-deployment.md), [ADR-0004](/docs/decisions/0004-typescript-with-node-js.md)

@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Iteration 1: Project Setup & HTTP Server
 
 Ref: [ADR-0004](/docs/decisions/0004-typescript-with-node-js.md), [DEP-001]

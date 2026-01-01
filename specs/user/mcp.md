@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # MCP Interface
 
 Ref: [ADR-0002](/docs/decisions/0002-adopt-mcp-as-the-agent-interface.md), [ADR-0005](/docs/decisions/0005-mcp-text-file-content-interface.md)

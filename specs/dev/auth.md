@@ -1,3 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-FileCopyrightText: 2025 SubLang contributors <https://github.com/sublang-xyz>
+-->
+
 # Authentication
 
 Ref: [ADR-0003](/docs/decisions/0003-unified-multi-tenant-and-local-deployment.md)

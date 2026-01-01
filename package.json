@@ -19,7 +19,7 @@
     "ai-agents"
   ],
   "author": "",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0-or-later",
   "engines": {
     "node": ">=18.19.0"
   },
